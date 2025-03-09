@@ -8,9 +8,20 @@
     <style>
         .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
         h1, h2 { color: #444; }
-        img { width: 100%; border-radius: 10px; margin: 10px 0; }
         p { text-align: justify; font-size: 18px; }
         a { text-decoration: none; color: blue; }
+
+        /* Adicionando estilo para exibir imagens lado a lado */
+        .imagens-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .imagens-container img {
+            width: 48%; /* Ajuste o tamanho das imagens para que caibam lado a lado */
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -23,8 +34,11 @@
     <div class="container">
         <h1>O Natal na Trincheira – A Trégua de 1914</h1>
 
-        <!-- Primeira imagem no início do artigo -->
-        <img src="images/tregua_natal_inicio.jpg" alt="Soldados celebrando a trégua de Natal">
+        <!-- Imagens lado a lado -->
+        <div class="imagens-container">
+            <img src="images/tregua_natal_inicio.jpg" alt="Soldados celebrando a trégua de Natal">
+            <img src="images/tregua_natal_2.jpg" alt="Imagens de soldados interagindo durante a trégua">
+        </div>
 
         <h2>Contexto Histórico</h2>
         <p>A Primeira Guerra Mundial começou em julho de 1914 e rapidamente se transformou em um conflito brutal de trincheiras, especialmente na Frente Ocidental. O Natal daquele ano foi o primeiro da guerra, e os soldados estavam exaustos, longe de casa e vivendo sob condições desumanas, cercados por lama, frio e morte.</p>
