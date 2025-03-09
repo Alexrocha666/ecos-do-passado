@@ -6,11 +6,42 @@
     <title>Ecos do Passado</title>  
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <style>
+        /* Estilo para garantir que as caixas fiquem lado a lado */
+        .conteudo {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Espaço entre as caixas */
+            flex-wrap: wrap; /* Para garantir que em telas pequenas as caixas não quebrem fora da tela */
+        }
+
+        .card {
+            width: 48%; /* Cada caixa ocupa quase metade da tela */
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .imagem-capa {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Estilo de link */
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
 </head>  
 <body>  
     <header>  
         <h1>Ecos do Passado</h1>  
-        <p>Descubra as histórias do mundo</p>  
+        <p>Descubra as histórias esquecidas do mundo</p>  
     </header>  
       
     <nav>  
@@ -22,8 +53,9 @@
         </ul>  
     </nav>  
 
-    <!-- Primeira caixa (Cleópatra) -->
+    <!-- Seção de conteúdo com flexbox para as caixas lado a lado -->
     <section class="conteudo">  
+        <!-- Caixa de Cleópatra -->
         <div class="card">  
             <!-- Imagem de capa dentro do card -->  
             <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">  
@@ -32,10 +64,8 @@
             <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>  
             <a href="cleopatra.html">Leia mais</a>  
         </div>  
-    </section>  
 
-    <!-- Segunda caixa (Anne Frank) -->
-    <section class="conteudo">  
+        <!-- Caixa de Anne Frank -->
         <div class="card">  
             <!-- Imagem de capa dentro do card -->  
             <img src="images/images/anne_frank.jpg" alt="Imagem de Anne Frank" class="imagem-capa">  
