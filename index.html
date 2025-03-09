@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Ecos do Passado</title>  
     <link rel="stylesheet" href="styles.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Adicionando uma fonte mais elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">  
     <style>
         .conteudo {
             padding: 20px;
@@ -18,6 +20,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
         }
 
         .imagem-capa {
@@ -28,9 +35,72 @@
 
         a {
             text-decoration: none;
+            color: inherit;
+        }
+
+        .card a {
+            display: block;
+            color: inherit;
+        }
+
+        /* Estilizando o título do site */
+        header {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        header h1 {
+            font-family: 'Roboto Slab', serif; /* Usando a fonte mais elegante */
+            font-size: 4rem;  /* Tamanho maior do título */
+            color: #2c3e50;  /* Cor escura e elegante */
+            letter-spacing: 2px;  /* Aumenta o espaçamento das letras */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito mais elegante */
+            animation: pulsar 3s ease-in-out infinite; /* Efeito pulsante */
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+        }
+
+        /* Definindo a animação de pulsação */
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            text-align: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
             color: #007BFF;
             font-weight: bold;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
     </style>
 </head>  
 <body>  
@@ -52,32 +122,35 @@
     <section class="conteudo">  
         <!-- Caixa de Cleópatra -->
         <div class="card">  
-            <!-- Imagem de capa dentro do card -->  
-            <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">  
-              
-            <h3>A História de Cleópatra</h3>  
-            <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>  
-            <a href="cleopatra.html">Leia mais</a>  
+            <a href="cleopatra.html">
+                <!-- Imagem de capa dentro do card -->  
+                <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">  
+                
+                <h3>A História de Cleópatra</h3>  
+                <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>  
+            </a>
         </div>  
 
         <!-- Caixa de Anne Frank -->
         <div class="card">  
-            <!-- Imagem de capa dentro do card -->  
-            <img src="images/images/anne_frank.jpg" alt="Imagem de Anne Frank" class="imagem-capa">  
-              
-            <h3>O Diário de Anne Frank: Um Testemunho de Coragem e Esperança</h3>  
-            <p>Anne Frank, uma jovem judia, escreveu em seu diário durante o tempo em que esteve escondida da perseguição nazista. Sua história é um testemunho de coragem, esperança e a luta pela liberdade.</p>  
-            <a href="anne_frank.html">Leia mais</a>  
+            <a href="anne_frank.html">
+                <!-- Imagem de capa dentro do card -->  
+                <img src="images/images/anne_frank.jpg" alt="Imagem de Anne Frank" class="imagem-capa">  
+                
+                <h3>O Diário de Anne Frank: Um Testemunho de Coragem e Esperança</h3>  
+                <p>Anne Frank, uma jovem judia, escreveu em seu diário durante o tempo em que esteve escondida da perseguição nazista. Sua história é um testemunho de coragem, esperança e a luta pela liberdade.</p>  
+            </a>
         </div>  
 
         <!-- Caixa de O Natal na Trincheira -->
         <div class="card">
-            <!-- Imagem de capa dentro do card -->
-            <img src="images/images/tregua_natal1.jpg" alt="Soldados celebrando a trégua de Natal" class="imagem-capa">
-            
-            <h3>O Natal na Trincheira – A Trégua de 1914</h3>
-            <p>A Primeira Guerra Mundial, no Natal de 1914, viu uma trégua improvável entre os soldados britânicos e alemães. Descubra como a humanidade brilhou no meio da guerra.</p>
-            <a href="tregua_natal.html">Leia mais</a>
+            <a href="tregua_natal.html">
+                <!-- Imagem de capa dentro do card -->
+                <img src="images/images/tregua_natal1.jpg" alt="Soldados celebrando a trégua de Natal" class="imagem-capa">
+                
+                <h3>O Natal na Trincheira – A Trégua de 1914</h3>
+                <p>A Primeira Guerra Mundial, no Natal de 1914, viu uma trégua improvável entre os soldados britânicos e alemães. Descubra como a humanidade brilhou no meio da guerra.</p>
+            </a>
         </div>  
     </section>  
 
