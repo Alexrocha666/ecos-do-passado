@@ -17,43 +17,21 @@
         <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#">Histórias</a></li>
-            <li><a href="#">Curiosidades</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
     
     <section class="hero">
-        <h2>Viagem ao Passado</h2>
-        <p>Explore mistérios, curiosidades e fatos históricos fascinantes.</p>
-        <a href="#" class="btn">Começar Agora</a>
+        <h2>Cleópatra: A Última Rainha do Egito</h2>
+        <p>Uma mulher de poder e mistério na história antiga.</p>
     </section>
 
     <section class="conteudo">
         <div class="card">
-            <img src="img/tutancamon.jpg" alt="Tutancâmon">
-            <h3>A Maldição de Tutancâmon</h3>
-            <p>Descubra a lenda por trás da tumba do faraó.</p>
-            <a href="#">Leia mais</a>
-        </div>
-        <div class="card">
-            <img src="img/machu_picchu.jpg" alt="Machu Picchu">
-            <h3>O Mistério de Machu Picchu</h3>
-            <p>A cidade inca perdida nos Andes.</p>
-            <a href="#">Leia mais</a>
-        </div>
-        <div class="card">
-            <img src="img/templarios.jpg" alt="Templários">
-            <h3>Os Segredos dos Templários</h3>
-            <p>A ordem secreta e seu tesouro perdido.</p>
-            <a href="#">Leia mais</a>
-        </div>
-        
-        <!-- NOVO CARD PARA CLEÓPATRA -->
-        <div class="card">
             <img src="img/cleopatra.jpg" alt="Cleópatra">
-            <h3>Cleópatra: A Última Rainha do Egito</h3>
-            <p>Uma mulher de poder e mistério na história antiga.</p>
+            <h3>A História de Cleópatra</h3>
+            <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>
             <a href="cleopatra.html">Leia mais</a>
         </div>
     </section>
@@ -61,5 +39,18 @@
     <footer>
         <p>&copy; 2025 Ecos do Passado | Todos os direitos reservados</p>
     </footer>
+
+    <!-- SCRIPT DE ATUALIZAÇÃO AUTOMÁTICA -->
+    <script>
+        setInterval(() => {
+            fetch(window.location.href, { cache: "reload" })
+                .then(response => {
+                    if (response.ok) {
+                        location.reload();
+                    }
+                });
+        }, 60000); // Atualiza a página a cada 60 segundos
+    </script>
+
 </body>
 </html>
