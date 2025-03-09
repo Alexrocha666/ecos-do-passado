@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecos do Passado</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <h1>Ecos do Passado</h1>
-        <p>Descubra as histórias esquecidas do mundo</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Histórias</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-    
-    <section class="conteudo">
-        <div class="card">
-            <!-- Imagem de capa dentro do card -->
-            <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">
-            
-            <h3>A História de Cleópatra</h3>
-            <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>
-            <a href="cleopatra.html">Leia mais</a>
-        </div>
-    </section>
+<html lang="pt">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Ecos do Passado</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+</head>  
+<body>  
+    <header>  
+        <h1>Ecos do Passado</h1>  
+        <p>Descubra as histórias do mundo</p>  
+    </header>  
+      
+    <nav>  
+        <ul>  
+            <li><a href="#">Início</a></li>  
+            <li><a href="#">Histórias</a></li>  
+            <li><a href="#">Sobre</a></li>  
+            <li><a href="#">Contato</a></li>  
+        </ul>  
+    </nav>  
 
-    <footer>
-        <p>&copy; 2025 Ecos do Passado | Todos os direitos reservados</p>
-    </footer>
+    <!-- Primeira caixa (Cleópatra) -->
+    <section class="conteudo">  
+        <div class="card">  
+            <!-- Imagem de capa dentro do card -->  
+            <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">  
+              
+            <h3>A História de Cleópatra</h3>  
+            <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>  
+            <a href="cleopatra.html">Leia mais</a>  
+        </div>  
+    </section>  
 
-    <!-- SCRIPT DE ATUALIZAÇÃO COM VERIFICAÇÃO DE VERSÃO -->
-    <script>
-        async function verificarAtualizacao() {
-            try {
-                let resposta = await fetch("versao.json"); // Arquivo JSON com a versão do site
-                let dados = await resposta.json();
-                
-                let versaoSalva = localStorage.getItem("versao_site") || "0";
-                
-                if (dados.versao !== versaoSalva) {
-                    localStorage.setItem("versao_site", dados.versao);
-                    alert("O site foi atualizado! Recarregando...");
-                    location.reload(); // Atualiza automaticamente a página
-                }
-            } catch (error) {
-                console.error("Erro ao verificar atualização:", error);
-            }
-        }
+    <!-- Segunda caixa (Anne Frank) -->
+    <section class="conteudo">  
+        <div class="card">  
+            <!-- Imagem de capa dentro do card -->  
+            <img src="images/images/anne_frank.jpg" alt="Imagem de Anne Frank" class="imagem-capa">  
+              
+            <h3>O Diário de Anne Frank: Um Testemunho de Coragem e Esperança</h3>  
+            <p>Anne Frank, uma jovem judia, escreveu em seu diário durante o tempo em que esteve escondida da perseguição nazista. Sua história é um testemunho de coragem, esperança e a luta pela liberdade.</p>  
+            <a href="anne_frank.html">Leia mais</a>  
+        </div>  
+    </section>  
 
-        setInterval(verificarAtualizacao, 5000); // Verifica a cada 5 segundos
-    </script>
-</body>
+    <footer>  
+        <p>&copy; 2025 Ecos do Passado | Todos os direitos reservados</p>  
+    </footer>  
+  
+    <!-- SCRIPT DE ATUALIZAÇÃO COM VERIFICAÇÃO DE VERSÃO -->  
+    <script>  
+        async function verificarAtualizacao() {  
+            try {  
+                let resposta = await fetch("versao.json"); // Arquivo JSON com a versão do site  
+                let dados = await resposta.json();  
+                  
+                let versaoSalva = localStorage.getItem("versao_site") || "0";  
+                  
+                if (dados.versao !== versaoSalva) {  
+                    localStorage.setItem("versao_site", dados.versao);  
+                    alert("O site foi atualizado! Recarregando...");  
+                    location.reload(); // Atualiza automaticamente a página  
+                }  
+            } catch (error) {  
+                console.error("Erro ao verificar atualização:", error);  
+            }  
+        }  
+  
+        setInterval(verificarAtualizacao, 5000); // Verifica a cada 5 segundos  
+    </script>  
+</body>  
 </html>
