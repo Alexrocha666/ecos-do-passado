@@ -6,8 +6,9 @@
     <title>Ecos do Passado</title>  
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Adicionando uma fonte mais elegante -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">  
+    <!-- Fonte mais estilizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte para o subtítulo -->
     <style>
         .conteudo {
             padding: 20px;
@@ -52,15 +53,20 @@
         header h1 {
             font-family: 'Roboto Slab', serif; /* Usando a fonte mais elegante */
             font-size: 4rem;  /* Tamanho maior do título */
-            color: #2c3e50;  /* Cor escura e elegante */
+            color: white;  /* Cor do título para branco */
             letter-spacing: 2px;  /* Aumenta o espaçamento das letras */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar um efeito mais elegante */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar um efeito mais elegante */
             animation: pulsar 3s ease-in-out infinite; /* Efeito pulsante */
         }
 
         header p {
-            font-size: 1.5rem;
-            color: #7f8c8d;
+            font-family: 'Playfair Display', serif; /* Fonte estilizada para o subtítulo */
+            font-size: 1.8rem;
+            color: #ecf0f1;
+            font-weight: 400;  /* Peso mais leve para o subtítulo */
+            letter-spacing: 1px; /* Leve espaçamento */
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra leve no subtítulo */
         }
 
         /* Definindo a animação de pulsação */
@@ -79,26 +85,11 @@
             }
         }
 
-        nav ul {
-            text-align: center;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
             background-color: #f4f4f4;
+            color: #333;
         }
 
     </style>
@@ -108,15 +99,6 @@
         <h1>Ecos do Passado</h1>  
         <p>Descubra as histórias esquecidas do mundo</p>  
     </header>  
-      
-    <nav>  
-        <ul>  
-            <li><a href="#">Início</a></li>  
-            <li><a href="#">Histórias</a></li>  
-            <li><a href="#">Sobre</a></li>  
-            <li><a href="#">Contato</a></li>  
-        </ul>  
-    </nav>  
 
     <!-- Seção de conteúdo com as caixas em formato de coluna -->
     <section class="conteudo">  
@@ -157,7 +139,7 @@
     <footer>  
         <p>&copy; 2025 Ecos do Passado | Todos os direitos reservados</p>  
     </footer>  
-  
+
     <!-- SCRIPT DE ATUALIZAÇÃO COM VERIFICAÇÃO DE VERSÃO -->  
     <script>  
         async function verificarAtualizacao() {  
