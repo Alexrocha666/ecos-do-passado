@@ -7,20 +7,16 @@
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
     <style>
-        /* Estilo para garantir que as caixas fiquem lado a lado */
         .conteudo {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px; /* Espaço entre as caixas */
-            flex-wrap: wrap; /* Para garantir que em telas pequenas as caixas não quebrem fora da tela */
+            padding: 20px;
         }
 
         .card {
-            width: 48%; /* Cada caixa ocupa quase metade da tela */
             background-color: #f4f4f4;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
             text-align: center;
         }
 
@@ -30,7 +26,6 @@
             border-radius: 8px;
         }
 
-        /* Estilo de link */
         a {
             text-decoration: none;
             color: #007BFF;
@@ -53,7 +48,7 @@
         </ul>  
     </nav>  
 
-    <!-- Seção de conteúdo com flexbox para as caixas lado a lado -->
+    <!-- Seção de conteúdo com as caixas em formato de coluna -->
     <section class="conteudo">  
         <!-- Caixa de Cleópatra -->
         <div class="card">  
