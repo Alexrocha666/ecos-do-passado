@@ -8,9 +8,8 @@
     <meta name="description" content="Site dedicado a contar histórias do passado. Descubra fatos históricos e curiosidades do mundo.">  
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Fonte mais estilizada -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte para o subtítulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .conteudo {
             padding: 20px;
@@ -46,45 +45,34 @@
             color: inherit;
         }
 
-        /* Estilizando o título do site */
         header {
             text-align: center;
             margin-top: 40px;
         }
 
         header h1 {
-            font-family: 'Roboto Slab', serif; /* Usando a fonte mais elegante */
-            font-size: 4rem;  /* Tamanho maior do título */
-            color: white;  /* Cor do título para branco */
-            letter-spacing: 2px;  /* Aumenta o espaçamento das letras */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar um efeito mais elegante */
-            animation: pulsar 3s ease-in-out infinite; /* Efeito pulsante */
+            font-family: 'Roboto Slab', serif;
+            font-size: 4rem;
+            color: white;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulsar 3s ease-in-out infinite;
         }
 
         header p {
-            font-family: 'Playfair Display', serif; /* Fonte estilizada para o subtítulo */
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             color: #ecf0f1;
-            font-weight: 400;  /* Peso mais leve para o subtítulo */
-            letter-spacing: 1px; /* Leve espaçamento */
+            font-weight: 400;
+            letter-spacing: 1px;
             margin-top: 10px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra leve no subtítulo */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
-        /* Definindo a animação de pulsação */
         @keyframes pulsar {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 0.9;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.9; }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         footer {
@@ -102,51 +90,48 @@
         <p>Descubra as histórias esquecidas do mundo</p>  
     </header>  
 
-    <!-- Seção de conteúdo com as caixas em formato de coluna -->
     <section class="conteudo">  
-        <!-- Caixa de Cleópatra -->
         <div class="card">  
             <a href="cleopatra.html">
-                <!-- Imagem de capa dentro do card -->  
                 <img src="images/images/cleopatra_capa.jpg" alt="Imagem de Cleópatra" class="imagem-capa">  
-                
                 <h3>A História de Cleópatra</h3>  
                 <p>Cleópatra VII Filopátor, a última faraó do Egito, é uma das figuras mais fascinantes da história antiga. Sua vida foi marcada por intrigas políticas, alianças estratégicas e tragédias pessoais.</p>  
             </a>
         </div>  
 
-        <!-- Caixa de Anne Frank -->
         <div class="card">  
             <a href="anne_frank.html">
-                <!-- Imagem de capa dentro do card -->  
                 <img src="images/images/anne_frank.jpg" alt="Imagem de Anne Frank" class="imagem-capa">  
-                
                 <h3>O Diário de Anne Frank: Um Testemunho de Coragem e Esperança</h3>  
                 <p>Anne Frank, uma jovem judia, escreveu em seu diário durante o tempo em que esteve escondida da perseguição nazista. Sua história é um testemunho de coragem, esperança e a luta pela liberdade.</p>  
             </a>
         </div>  
 
-        <!-- Caixa de O Natal na Trincheira -->
         <div class="card">
             <a href="tregua_natal.html">
-                <!-- Imagem de capa dentro do card -->
                 <img src="images/images/tregua_natal1.jpg" alt="Soldados celebrando a trégua de Natal" class="imagem-capa">
-                
                 <h3>O Natal na Trincheira – A Trégua de 1914</h3>
                 <p>A Primeira Guerra Mundial, no Natal de 1914, viu uma trégua improvável entre os soldados britânicos e alemães. Descubra como a humanidade brilhou no meio da guerra.</p>
             </a>
         </div>  
+
+        <div class="card">
+            <a href="criacao_onu.html">
+                <img src="images/images/onu_capa.jpg" alt="Fundação da ONU em 1945" class="imagem-capa">
+                <h3>A Criação da ONU (1945)</h3>
+                <p>Após a Segunda Guerra Mundial, líderes mundiais se reuniram para formar uma organização internacional dedicada à paz e cooperação global. Conheça a história da criação da ONU e seu impacto no mundo.</p>
+            </a>
+        </div>
     </section>  
 
     <footer>  
         <p>&copy; 2025 Ecos do Passado | Todos os direitos reservados</p>  
     </footer>  
 
-    <!-- SCRIPT DE ATUALIZAÇÃO COM VERIFICAÇÃO DE VERSÃO -->  
     <script>  
         async function verificarAtualizacao() {  
             try {  
-                let resposta = await fetch("versao.json"); // Arquivo JSON com a versão do site  
+                let resposta = await fetch("versao.json");  
                 let dados = await resposta.json();  
                   
                 let versaoSalva = localStorage.getItem("versao_site") || "0";  
@@ -154,14 +139,14 @@
                 if (dados.versao !== versaoSalva) {  
                     localStorage.setItem("versao_site", dados.versao);  
                     alert("O site foi atualizado! Recarregando...");  
-                    location.reload(); // Atualiza automaticamente a página  
+                    location.reload();  
                 }  
             } catch (error) {  
                 console.error("Erro ao verificar atualização:", error);  
             }  
         }  
   
-        setInterval(verificarAtualizacao, 5000); // Verifica a cada 5 segundos  
+        setInterval(verificarAtualizacao, 5000);  
     </script>  
 </body>  
 </html>
