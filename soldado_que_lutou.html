@@ -36,6 +36,31 @@
         h2 {
             color: #333;
         }
+
+        /* Estilização do botão de voltar */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #3498db;
+            transform: translateY(-3px);
+        }
+
+        .back-button:active {
+            background-color: #2980b9;
+            transform: translateY(1px);
+        }
     </style>
 </head>
 <body>
@@ -75,6 +100,9 @@
         <p>Após a guerra, Yang Kyoungjong foi libertado e decidiu ficar nos Estados Unidos. Pouco se sabe sobre sua vida após esse período, mas acredita-se que ele tenha vivido o resto da vida tranquilamente em Illinois, onde morreu nos anos 1990.</p>
         <p>Algumas pessoas questionam a autenticidade da história, mas há diversos relatos que reforçam sua veracidade. Seja verdade ou exagero, sua trajetória continua sendo uma das mais impressionantes da Segunda Guerra Mundial.</p>
     </div>
+
+    <!-- Botão de Voltar -->
+    <a href="index.html" class="back-button">Voltar</a>
 
 </body>
 </html>
